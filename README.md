@@ -14,6 +14,12 @@ https://user-images.githubusercontent.com/129570700/236636111-ae6c3b0b-0e32-4950
 3. Install the **pyfiglet, termcolor,** and **tqdm**
 4. Run the program.
 
+*Sample Picture*
+![SAC](https://user-images.githubusercontent.com/129570700/236637447-f7a25ebe-ece3-4da7-9a44-5023a8012325.PNG)
+
+*Link to Gdrive (Demo Video)*
+https://drive.google.com/drive/folders/1gkVVUelKRDQxw10yoGYs_Wt8THRpszvN?usp=share_link
+
 ## How to run in git bash?
 # INSTALLATIONS
 # CREDITS
