@@ -1,1 +1,1 @@
-str(number_1) + str(ask_usr) + str(number_2) + "=" + str(add) + '\n'
+alculatorhistory_file.close()

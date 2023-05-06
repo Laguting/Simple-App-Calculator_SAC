@@ -96,5 +96,5 @@ def process():
             print(colored(exit_1.renderText("Thank you! <3"), "magenta"))
             print("\n\33[3m Until next time!... '૮₍ •⤙•˶\33[0m")            
 # Closing the file and program
-            calculatorhistory_file.close()
+    calculatorhistory_file.close()
 process()
