@@ -35,3 +35,8 @@ https://drive.google.com/drive/folders/1gkVVUelKRDQxw10yoGYs_Wt8THRpszvN?usp=sha
 - Developed by Maricon Jane G. Laguting from BSCpE 1-4
 
 ## CONTACTS 📞
+- *Facebook:* https://www.facebook.com/mariconjaneglaguting?mibextid=ZbWKwL
+- *Number:* (TM) +63 926 395 2915
+- *Gmail:* lagutingmariconjaneg@gmail.com
+
+##
