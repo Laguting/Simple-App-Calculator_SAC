@@ -90,11 +90,11 @@ def process():
                 calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {divi_sion}" + '\n')
             else:
                 break
-            calculatorhistory_file.close()
      # If no, Display "Thank you" and exit
           else:
             exit_1 = Figlet(font = "slant")
             print(colored(exit_1.renderText("Thank you! <3"), "magenta"))
             print("\n\33[3m Until next time!... '૮₍ •⤙•˶\33[0m")            
-# Closing
+# Closing the file and program
+    calculatorhistory_file.close()
 process()
