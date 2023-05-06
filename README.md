@@ -8,7 +8,12 @@ https://user-images.githubusercontent.com/129570700/236636111-ae6c3b0b-0e32-4950
 - Has a **loading feature** to initiate the program.
 - Uses **pyfiglet, termcolor,** and **tqdm**
 
-## How to run in IDE?
+## How to run in IDE 👩🏻‍💻?
+1. Copy the code to your preferred IDE.
+2. Create the text file and leave it blank.
+3. Install the **pyfiglet, termcolor,** and **tqdm**
+4. Run the program.
+
 ## How to run in git bash?
 # INSTALLATIONS
 # CREDITS
