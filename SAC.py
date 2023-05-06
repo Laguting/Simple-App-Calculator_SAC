@@ -1,6 +1,5 @@
 # Laguting, Maricon Jane G.
 # Task: Create a Simple App Calculator that applies the Exception handling lesson.
-
 # Opening
 from pyfiglet import Figlet
 from termcolor import colored
@@ -10,6 +9,7 @@ print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
 print()
 print(colored(s_a_c.renderText("Simple App Calculator"), "yellow"))
 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
+
 # Welcome
 s_a_c = Figlet(font = "banner3-D")
 print()
@@ -23,7 +23,7 @@ print()
 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
 print()
 
-     # Loading bar
+# Loading bar
 from tqdm import tqdm
 import time 
 for i in tqdm (range (100), desc="Loading...\U0001F973"):
@@ -34,7 +34,7 @@ print("\33[32m\33[1mThank you for your patience!˶^•ﻌ•^˵ \33[0m\n")
 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
 print()
 
-  # Ask the user for any inputs
+# Ask the user for any inputs
 def process():
     with open("calc_history.text", "w") as calculatorhistory_file: # Open text file that will hold the history of inputs
         while True:
