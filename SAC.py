@@ -47,7 +47,7 @@ def process():
                if ask_usr not in ["+", "-", "*", "/"]:
                    raise ValueError
             except ValueError:
-                print("Invalid Operation. Try again.")
+                print("\n\33[1mInvalid Operation. Try again.\33[0m")
                 process()
             try:
                 number_1 = float(input("\n\33[43m1st number: \33[0m"))
