@@ -20,7 +20,18 @@ https://user-images.githubusercontent.com/129570700/236636111-ae6c3b0b-0e32-4950
 *Link to Gdrive (Demo Video)*
 https://drive.google.com/drive/folders/1gkVVUelKRDQxw10yoGYs_Wt8THRpszvN?usp=share_link
 
-## How to run in git bash?
-# INSTALLATIONS
-# CREDITS
-## CONTACTS
+## How to run in git bash 🚀?
+> git clone https://github.com/Laguting/Simple-App-Calculator_SAC.git
+
+> cd Simple-App-Calculator_SAC/
+
+> python SAC
+
+# INSTALLATIONS 📥
+- **This program used three installations namely Pyfiglet, Termcolor, and Tqdm. Install it by typing the following in the terminal.**
+> pip install pyfiglet, termcolor, and tqdm
+
+# CREDITS 👩
+- Developed by Maricon Jane G. Laguting from BSCpE 1-4
+
+## CONTACTS 📞
