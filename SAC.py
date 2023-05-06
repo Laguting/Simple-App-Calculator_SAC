@@ -11,6 +11,15 @@ print()
 print(colored(s_a_c.renderText("Simple App Calculator"), "yellow"))
 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
 # Welcome
+s_a_c = Figlet(font = "banner3-D")
+print()
+print(colored(s_a_c.renderText("Welcome"), "green"))
+print("          ┻┳|              ")
+print("          ┳┻| _")
+print("          ┻┳| •.•). i'm watching.....")
+print("          ┳┻|   ⊂ﾉ)")
+print("          ┻┳")
+print()
   # Ask the user for any inputs
   # Perform the calculations
   # ask for another inputs
