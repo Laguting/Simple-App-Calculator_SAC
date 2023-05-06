@@ -63,7 +63,15 @@ def process():
                 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
                 print("\n", result3, "\n")
                 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
-            calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {multi_ply}" + '\n')
+                calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {multi_ply}" + '\n')
+    # Division
+            elif ask_usr == "/":
+                divi_sion = number_1 / number_2
+                result4 = (f"\n\33[7m{number_1} {ask_usr} {number_2} = {divi_sion}\33[0m")
+                print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
+                print("\n", result4, "\n")
+                print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
+                calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {divi_sion}" + '\n')
             calculatorhistory_file.close()            
 process()
   # ask for another inputs
