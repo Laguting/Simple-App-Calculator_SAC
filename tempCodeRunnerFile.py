@@ -20,16 +20,17 @@ print("          ┻┳|•.•) i'm watching.....")
 print("          ┳┻|  ⊂ﾉ)")
 print("          ┻┳|")
 print()
-print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
   # Ask the user for any inputs
-while True:
-    ask_usr = input("\n\n\33[1m\33[34m What operation would you like to perform? Enter Add = '+'; Subtraction = '-'; Multiplication = '*'; Division = '/': \33[0m")
+def calculator():
+    ask_usr = input("What operation would you like to perform? Enter Add = '+'; Subtraction = '-'; Multiplication = '*'; Division = '/': ")
+    print(ask_usr)
     try:
         number_1 = float(input("1st number: "))
         number_2 = float(input("2nd number: "))
-    except ValueError:
+    except:
         print("This calculator only accepts numbers") 
   # Perform the calculations
   # ask for another inputs
+     # If yes
      # If no, Display "Thank you" and exit
 # Closing
