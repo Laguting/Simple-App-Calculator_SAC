@@ -21,11 +21,24 @@ print("\33[35m          ┳┻|  ⊂ﾉ)\33[0m")
 print("\33[35m          ┻┳|\33[0m")
 print()
 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
+print()
+
+     # Loading bar
+from tqdm import tqdm
+import time 
+for i in tqdm (range (100), desc="Loading...\U0001F973"):
+    time.sleep(0.05)
+    pass
+print("\n\n")
+print("\33[32m\33[1mThank you for your patience!˶^•ﻌ•^˵ \33[0m\n")
+print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
+print()
+
   # Ask the user for any inputs
 def process():
     with open("calc_history.text", "w") as calculatorhistory_file: # Open text file that will hold the history of inputs
         while True:
-     # ask for another inputs
+     # ask if they wanted to continue
           again_usr = input("\n\33[36m Would you like to try again: Enter 'Y' if yes and 'N' if no: \33[0m")
      # If yes call process
           if again_usr.upper() == "Y":
@@ -82,6 +95,6 @@ def process():
           else:
             exit_1 = Figlet(font = "slant")
             print(colored(exit_1.renderText("Thank you! <3"), "magenta"))
-            print("\n\33[3m Until next time!...\33[0m")            
+            print("\n\33[3m Until next time!... '૮₍ •⤙•˶\33[0m")            
 # Closing
 process()
