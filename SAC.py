@@ -42,22 +42,22 @@ def process():
           again_usr = input("\n\33[36m Would you like to try again: Enter 'Y' if yes and 'N' if no: \33[0m")
      # If yes call process
           if again_usr.upper() == "Y":
-            try:
+             try:
                ask_usr = input("\n\n\33[1m\33[34m What operation would you like to perform? Enter Add = '+'; Subtraction = '-'; Multiplication = '*'; Division = '/': \33[0m")
                if ask_usr not in ["+", "-", "*", "/"]:
                    raise ValueError
-            except ValueError:
+             except ValueError:
                 print("\n\33[1mInvalid Operation. Try again.\33[0m")
                 process()
-            try:
+             try:
                 number_1 = float(input("\n\33[43m1st number: \33[0m"))
                 number_2 = float(input("\n\33[43m2nd number: \33[0m"))
-            except ValueError:
+             except ValueError:
                 print("\n\33[1m\33[31mThis calculator only accepts numbers\33[0m") 
                 process()
   # Perform the calculations
     # Add
-            if ask_usr == "+": 
+             if ask_usr == "+": 
                 add = number_1 + number_2
                 result1 = (f"\n\33[7m{number_1} {ask_usr} {number_2} = {add}\33[0m")
                 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
@@ -65,7 +65,7 @@ def process():
                 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
                 calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {add}" + '\n')
     # Subtract
-            elif ask_usr == "-":
+             elif ask_usr == "-":
                 sub_tract = number_1 - number_2
                 result2 = (f"\n\33[7m{number_1} {ask_usr} {number_2} = {sub_tract}\33[0m")
                 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
@@ -73,7 +73,7 @@ def process():
                 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
                 calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {sub_tract}" + '\n')
     # Multiplication
-            elif ask_usr == "*":
+             elif ask_usr == "*":
                 multi_ply = number_1 * number_2
                 result3 = (f"\n\33[7m{number_1} {ask_usr} {number_2} = {multi_ply}\33[0m")
                 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
@@ -81,20 +81,21 @@ def process():
                 print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
                 calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {multi_ply}" + '\n')
     # Division
-            elif ask_usr == "/":
-                divi_sion = number_1 / number_2
-                result4 = (f"\n\33[7m{number_1} {ask_usr} {number_2} = {divi_sion}\33[0m")
-                print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
-                print("\n", result4, "\n")
-                print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
-                calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {divi_sion}" + '\n')
-            else:
-                break
+             else:
+                try:
+                   divi_sion = number_1 / number_2
+                   result4 = (f"\n\33[7m{number_1} {ask_usr} {number_2} = {divi_sion}\33[0m")
+                   print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
+                   print("\n", result4, "\n")
+                   print("⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆" * 10)
+                   calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {divi_sion}" + '\n')
+                except ZeroDivisionError:
+                    print("\n\33[1m\33[31mYou can't use zero(0) as your divisor\33[0m")
      # If no, Display "Thank you" and exit
           else:
             exit_1 = Figlet(font = "slant")
             print(colored(exit_1.renderText("Thank you! <3"), "magenta"))
-            print("\n\33[3m Until next time!... '૮₍ •⤙•˶\33[0m")            
+            print("\n\33[3m Until next time!... '૮₍ •⤙ •˶|\33[0m")            
 # Closing the file and program
             calculatorhistory_file.close()
 process()
